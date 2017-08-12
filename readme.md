@@ -1,10 +1,8 @@
 # has-package-lock [![Build Status](https://img.shields.io/travis/luftywiranda13/has-package-lock/master.svg?style=flat-square)](https://travis-ci.org/luftywiranda13/has-package-lock)
 
-> Check if a `package-lock.json` is present in the working directory
-
 Useful for tools that needs to know whether to use yarn or npm to install dependencies.
 
-## Install
+## Installation
 
 ```sh
 npm install --save has-package-lock
@@ -49,6 +47,7 @@ Current working directory.
 ## Related
 
 - [has-yarn](https://github.com/sindresorhus/has-yarn) - Check if a project is using Yarn
+- [has-lockfile](https://github.com/luftywiranda13/has-lockfile) - Check which lockfile is present in the working directory
 
 ## License
 
