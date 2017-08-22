@@ -1,9 +1,9 @@
-import test from 'ava';
+'use strict';
 
-import m from './';
+const hasPackageLock = require('./');
 
-test(t => {
-  t.true(m('fixtures/bar'));
-  t.false(m('fixtures/foo'));
-  t.false(m());
+test('output', () => {
+  expect(hasPackageLock('fixtures/bar')).toBe(true);
+  expect(hasPackageLock('fixtures/foo')).toBe(false);
+  expect(hasPackageLock('fixtures')).toBe(false);
 });
