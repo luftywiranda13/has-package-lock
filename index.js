@@ -1,6 +1,9 @@
 'use strict';
 
-const path = require('path');
-const fs = require('fs');
+const { existsSync } = require('fs');
+const { resolve } = require('path');
 
-module.exports = cwd => fs.existsSync(path.resolve(cwd || process.cwd(), 'package-lock.json'));
+const hasPackageLock = (cwd = process.cwd()) =>
+  existsSync(resolve(cwd, 'package-lock.json'));
+
+module.exports = hasPackageLock;

@@ -1,10 +1,11 @@
 # has-package-lock
 
-[![npm](https://img.shields.io/npm/v/has-package-lock.svg?style=flat-square)](https://www.npmjs.com/package/has-package-lock)
-[![Travis branch](https://img.shields.io/travis/luftywiranda13/has-package-lock/master.svg?style=flat-square)](https://travis-ci.org/luftywiranda13/has-package-lock)
-[![npm](https://img.shields.io/npm/dm/has-package-lock.svg?style=flat-square)](https://npm-stat.com/charts.html?package=has-package-lock&from=2016-04-01)
+> Check if a `package-lock.json` is present in the working directory
 
-Check if a `package-lock.json` is present in the working directory
+[![Package Version](https://img.shields.io/npm/v/has-package-lock.svg?style=flat-square)](https://www.npmjs.com/package/has-package-lock)
+[![Downloads Status](https://img.shields.io/npm/dm/has-package-lock.svg?style=flat-square)](https://npm-stat.com/charts.html?package=has-package-lock&from=2016-04-01)
+[![Build Status: Linux](https://img.shields.io/travis/luftywiranda13/has-package-lock/master.svg?style=flat-square)](https://travis-ci.org/luftywiranda13/has-package-lock)
+[![Coverage Status](https://img.shields.io/codecov/c/github/luftywiranda13/has-package-lock/master.svg?style=flat-square)](https://codecov.io/gh/luftywiranda13/has-package-lock)
 
 ## Installation
 
@@ -14,44 +15,45 @@ npm install --save has-package-lock
 
 ## Usage
 
-```
+```sh
+$ tree
 .
-├── foo
+├── bar
+│   ├── package-lock.json
 │   └── package.json
-└── bar
-    ├── package.json
-    └── package-lock.json
+└── foo
+    └── package.json
 ```
 
 ```js
 const hasPackageLock = require('has-package-lock');
 
-hasPackageLock('foo');
-//=> false
-
 hasPackageLock('bar');
 //=> true
+
+hasPackageLock('foo');
+//=> false
 ```
 
 ## API
 
-### hasPackageLock(cwd) 
+### hasPackageLock([cwd])
 
-#### Parameters
+Returns `boolean`.
 
-| Name | Type | Description | Default |
-| ---- | ---- | ----------- | -------- |
-| cwd | `String` | Directory to search from | `process.cwd()` |
+#### cwd
 
-#### Returns
+Type: `string`<br />
+Default: `process.cwd()`
 
-- `Boolean`
+Current working directory.
 
 ## Related
 
-- [has-yarn](https://github.com/sindresorhus/has-yarn) - Check if a project is using Yarn
-- [has-lockfile](https://github.com/luftywiranda13/has-lockfile) - Check which lockfile is present in the working directory
+* [has-lockfile](https://github.com/luftywiranda13/has-lockfile) － Check which lockfile is present in the working directory
+* [has-yarn](https://github.com/sindresorhus/has-yarn) － Check if a project is using Yarn
+* [pkg-man](https://github.com/luftywiranda13/pkg-man) － Detect which package manager that should be used
 
 ## License
 
-MIT &copy; [Lufty Wiranda](https://www.instagram.com/luftywiranda13)
+MIT &copy; [Lufty Wiranda](https://www.luftywiranda.com)
