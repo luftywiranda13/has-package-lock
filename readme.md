@@ -1,8 +1,8 @@
 # has-package-lock
 
-[![npm](https://img.shields.io/npm/v/has-package-lock.svg?style=flat-square)](https://www.npmjs.com/package/has-package-lock)
-[![Travis branch](https://img.shields.io/travis/luftywiranda13/has-package-lock/master.svg?style=flat-square)](https://travis-ci.org/luftywiranda13/has-package-lock)
-[![npm](https://img.shields.io/npm/dm/has-package-lock.svg?style=flat-square)](https://npm-stat.com/charts.html?package=has-package-lock&from=2016-04-01)
+[![Package Version](https://img.shields.io/npm/v/has-package-lock.svg)](https://www.npmjs.com/package/has-package-lock)
+[![Build Status: Linux](https://img.shields.io/travis/luftywiranda13/has-package-lock/master.svg)](https://travis-ci.org/luftywiranda13/has-package-lock)
+[![Downloads Status](https://img.shields.io/npm/dm/has-package-lock.svg)](https://npm-stat.com/charts.html?package=has-package-lock&from=2016-04-01)
 
 Check if a `package-lock.json` is present in the working directory
 
