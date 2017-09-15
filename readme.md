@@ -35,7 +35,7 @@ hasPackageLock('bar');
 
 ## API
 
-### hasPackageLock(cwd) 
+### hasPackageLock([cwd]) 
 
 #### Parameters
 
