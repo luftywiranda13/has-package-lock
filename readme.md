@@ -51,6 +51,7 @@ hasPackageLock('bar');
 
 - [has-yarn](https://github.com/sindresorhus/has-yarn) - Check if a project is using Yarn
 - [has-lockfile](https://github.com/luftywiranda13/has-lockfile) - Check which lockfile is present in the working directory
+- [pkg-man](https://github.com/luftywiranda13/pkg-man) - Detect which package manager that should be used
 
 ## License
 
