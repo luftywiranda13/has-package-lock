@@ -37,15 +37,14 @@ hasPackageLock('bar');
 
 ### hasPackageLock([cwd]) 
 
-#### Parameters
+Returns `boolean`.
 
-| Name | Type | Description | Default |
-| ---- | ---- | ----------- | -------- |
-| cwd | `String` | Directory to search from | `process.cwd()` |
+#### cwd
 
-#### Returns
+Type: `string`<br />
+Default: `process.cwd()`
 
-- `Boolean`
+Current working directory.
 
 ## Related
 
