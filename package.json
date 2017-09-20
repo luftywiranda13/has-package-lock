@@ -28,7 +28,8 @@
     "xo": "^0.18.2"
   },
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "collectCoverage": true
   },
   "xo": {
     "space": true,
