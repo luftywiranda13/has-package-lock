@@ -2,7 +2,6 @@
 
 [![Package Version](https://img.shields.io/npm/v/has-package-lock.svg)](https://www.npmjs.com/package/has-package-lock)
 [![Build Status: Linux](https://img.shields.io/travis/luftywiranda13/has-package-lock/master.svg)](https://travis-ci.org/luftywiranda13/has-package-lock)
-[![Coverage Status](https://img.shields.io/codecov/c/github/luftywiranda13/has-package-lock/master.svg)](https://codecov.io/gh/luftywiranda13/has-package-lock)
 [![Downloads Status](https://img.shields.io/npm/dm/has-package-lock.svg)](https://npm-stat.com/charts.html?package=has-package-lock&from=2016-04-01)
 
 Check if a `package-lock.json` is present in the working directory
@@ -15,28 +14,29 @@ npm install --save has-package-lock
 
 ## Usage
 
-```
+```sh
+$ tree
 .
-├── foo
+├── bar
+│   ├── package-lock.json
 │   └── package.json
-└── bar
-    ├── package.json
-    └── package-lock.json
+└── foo
+    └── package.json
 ```
 
 ```js
 const hasPackageLock = require('has-package-lock');
 
-hasPackageLock('foo');
-//=> false
-
 hasPackageLock('bar');
 //=> true
+
+hasPackageLock('foo');
+//=> false
 ```
 
 ## API
 
-### hasPackageLock([cwd]) 
+### hasPackageLock([cwd])
 
 Returns `boolean`.
 
@@ -49,9 +49,9 @@ Current working directory.
 
 ## Related
 
-- [has-yarn](https://github.com/sindresorhus/has-yarn) - Check if a project is using Yarn
-- [has-lockfile](https://github.com/luftywiranda13/has-lockfile) - Check which lockfile is present in the working directory
-- [pkg-man](https://github.com/luftywiranda13/pkg-man) - Detect which package manager that should be used
+- [has-yarn](https://github.com/sindresorhus/has-yarn) － Check if a project is using Yarn
+- [has-lockfile](https://github.com/luftywiranda13/has-lockfile) － Check which lockfile is present in the working directory
+- [pkg-man](https://github.com/luftywiranda13/pkg-man) － Detect which package manager that should be used
 
 ## License
 
