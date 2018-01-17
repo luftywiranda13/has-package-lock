@@ -1,6 +1,6 @@
 {
   "name": "has-package-lock",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Check if a `package-lock.json` is present in the working directory",
   "license": "MIT",
   "repository": "https://github.com/luftywiranda13/has-package-lock",
