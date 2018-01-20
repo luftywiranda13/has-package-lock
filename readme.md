@@ -10,7 +10,7 @@
 ## Installation
 
 ```sh
-npm install --save has-package-lock
+npm install has-package-lock
 ```
 
 ## Usage
