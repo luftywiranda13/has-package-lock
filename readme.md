@@ -1,5 +1,7 @@
 # has-package-lock
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/luftywiranda13/has-package-lock.svg)](https://greenkeeper.io/)
+
 > Check if a `package-lock.json` is present in the working directory
 
 [![Package Version](https://img.shields.io/npm/v/has-package-lock.svg?style=flat-square)](https://www.npmjs.com/package/has-package-lock)
