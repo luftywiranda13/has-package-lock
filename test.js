@@ -1,6 +1,6 @@
 'use strict';
 
-const hasPackageLock = require('./');
+const hasPackageLock = require('.');
 
 it('checks `package-lock.json`', () => {
   expect(hasPackageLock('fixtures')).toBe(false);
