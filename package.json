@@ -27,7 +27,7 @@
     "jest": "^22.0.4",
     "lint-staged": "^7.0.3",
     "remove-lockfiles": "^2.1.1",
-    "xo": "^0.20.3"
+    "xo": "^0.26.0"
   },
   "jest": {
     "testEnvironment": "node"
